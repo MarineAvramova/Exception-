@@ -1,20 +1,21 @@
 
-public class Product {
-	String nameOfProduct;
-    double price;
 
-    public Product(String nameOfProduct, double price){
-        this.nameOfProduct = nameOfProduct;
+public class Product {
+	private String name;
+	private double price;
+
+    public Product(String name, double price){
+        this.name = name;
         this.price = price;
     }
 
-    public String getNameOfProduct() {
+    public String getName() {
 
-        return nameOfProduct;
+        return name;
     }
 
-    public void setNameOfProduct(String nameOfProduct) {
-        this.nameOfProduct = nameOfProduct;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getPrice() {
@@ -25,3 +26,4 @@ public class Product {
         this.price = price;
     }
 }
+
