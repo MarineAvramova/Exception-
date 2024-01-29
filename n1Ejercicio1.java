@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class n1Ejercicio1 {
 
-	public static void main(String[] args) throws SaleEmptyException {
+	public static void main(String[] args){
 		//Checked Exeption(Compile time exeption) =
         //Unchecked(Runtime exeption) =
 
@@ -13,7 +13,12 @@ public class n1Ejercicio1 {
         saleStock.add(shoes);
         Sale sale1 = new Sale(00.00);
         sale1.setProducts(saleStock);
-        sale1.calculateTotal();
+        try {
+			sale1.calculateTotal();
+		} catch (SaleEmptyException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         //sale1.getTotalPrice();
 	}
 
