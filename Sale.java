@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Sale {
-	 public ArrayList<Product> products;
-	   public double totalPrice;
+	 private ArrayList<Product> products;
+	   private double totalPrice;
 
 	    public Sale(double totalPrice) {
 	        this.products = new ArrayList<Product>();
