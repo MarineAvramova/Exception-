@@ -11,7 +11,7 @@ public class Sale {
 
 	    public  ArrayList<Product>  getProducts() {
 
-	        return this.products;
+	        return new ArrayList<>(this.products);
 	    }
 
 	    public void setProducts(ArrayList<Product> products) {
